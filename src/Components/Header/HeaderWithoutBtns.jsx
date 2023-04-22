@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Header.css";
-import KoopsLogo from './../../Assests/Images/Koops-icon3.png';
+import KoopsLogo from './../../Assests/Koops-icon3.png';
 //import {Link} from 'react-router-dom';
 const HeaderWithoutBtns = () =>{
     return(        

@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import bot from '../Assests/chatbot.png';
+import bot from './../../Assests/chatbot.png';
 import { Login } from "../Login/Login";
 import './signup.css';
+import Header from './../Header/HeaderWithoutBtns'
+import Footer from "./../Footer/Footer";
 
 export const Signup = () => {
     const [name, setName] = useState('');
@@ -19,9 +21,9 @@ export const Signup = () => {
     
     return(
            
-        <diV className="form-container">
+        <div className="form-container">
             <div>
-            <header/>
+            <Header/>
             </div>
             
             <table>
@@ -52,7 +54,8 @@ export const Signup = () => {
                     </td>
                 </tr>
             </table>
-        </diV>
+            <Footer/>
+        </div>
     )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Footer.css";
-import FaceBookIcon from './../../Assests/Images/Icon awesome-facebook-square.png'
-import TwiiterIcon from './../../Assests/Images/Icon awesome-twitter.png'
-import InstagramIcon from './../../Assests/Images/Icon awesome-instagram.png'
+import FaceBookIcon from './../../Assests/Icon awesome-facebook-square.png'
+import TwiiterIcon from './../../Assests/Icon awesome-twitter.png'
+import InstagramIcon from './../../Assests/Icon awesome-instagram.png'
 const Footer = () =>{
     return(
         <footer className="container">

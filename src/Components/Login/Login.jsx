@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import bot from '../Assests/chatbot.png';
+import bot from './../../Assests/chatbot.png';
 import './login.css';
 
 

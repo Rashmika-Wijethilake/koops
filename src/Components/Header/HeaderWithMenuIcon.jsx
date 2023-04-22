@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Header.css";
-import KoopsLogo from './../../Assests/Images/Koops-icon3.png';
-import MenuIcon from './../../Assests/Images/MenuIcon.png';
+import KoopsLogo from './../../Assests/Koops-icon3.png';
+import MenuIcon from './../../Assests/MenuIcon.png';
 //import {Link} from 'react-router-dom';
 const HeaderWithMenuIcon = () =>{
     return(        
