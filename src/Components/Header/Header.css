@@ -1,0 +1,103 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width:  1800px;
+    margin: 0 ;
+    width:100%;
+    height:130px;
+    
+}
+
+.Row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 
+                           minmax(200px, 1fr));
+    grid-gap:1200px;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+    margin-right:20px;
+    margin-top:20px;
+    padding:20px;
+    width:200px;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+    margin-right:20px;
+    margin-top:20px;
+    padding:20px;
+    width:200px;
+}
+
+.container2{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Login-ButtonContainer{
+   align-items: center;
+   margin-right:20px;
+   width: 100%;
+   
+  }
+  
+  .LogInButton{
+    background-color: #1560A4;
+    color: white; 
+    padding: 15px; 
+    border: none; 
+    border-radius: 30px; 
+    font:Arial; 
+    font-size:20px;
+    width:150px;
+  }
+
+  .SignUp-ButtonContainer{
+    align-items: center;
+    margin-left:20px;
+    width: 100%;
+}
+
+.SignUpButton{
+    background-color:#1560A4;
+    color: white; 
+    padding: 15px; 
+    border: none; 
+    border-radius: 30px; 
+    font:Arial; 
+    font-size:20px;
+    width:150px;
+}
+
+.imageCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    }
+
+.imageKoopsLogo{
+    justify-content: center;
+    height:100 px;
+    width:200px;
+}
+
+.MenuImageIcon{
+    justify-content: center;
+    height:100 px;
+    width:120px;
+}
+
+
+

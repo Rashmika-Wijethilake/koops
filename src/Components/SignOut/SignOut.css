@@ -1,0 +1,37 @@
+.page-container{
+    display:flex;
+    flex-direction: column;
+    max-width:2005px;
+    
+  } 
+  
+  .content-wrap{
+     /* flex:5; */
+    background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .bodyText{
+    
+        text-align:center;
+         padding: 50px;
+         justify-content: center;
+    
+      }
+ 
+   .TextContainer{
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+ .heading{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+    
