@@ -20,7 +20,7 @@ export const Login = () => {
     return(
         
         <div className="form-container">
-            <div>
+            <div className="Header">
             <HeaderWithoutBtns/>
             </div>
 
