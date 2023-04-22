@@ -2,11 +2,8 @@ import React from "react";
 import { useState } from "react";
 import bot from './../../Assests/chatbot.png';
 import './login.css';
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import HeaderWithMenuIcon from "../Header/HeaderWithMenuIcon";
 import HeaderWithoutBtns from "../Header/HeaderWithoutBtns";
-
 
 
 export const Login = () => {
