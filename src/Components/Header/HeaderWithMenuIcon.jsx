@@ -17,8 +17,7 @@ const HeaderWithMenuIcon = () =>{
             {/* Column2 */}
             <div className = "column1">
                 <div className="container2">
-                   <img className='MenuImageIcon' 
-                src={MenuIcon} alt="Menu"></img> 
+                   <img className='MenuImageIcon' src={MenuIcon} alt="Menu"></img> 
                 </div>  
             </div>   
         </div> 

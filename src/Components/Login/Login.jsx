@@ -24,10 +24,10 @@ export const Login = () => {
             <HeaderWithoutBtns/>
             </div>
 
-            <div>
+            <div className="Form">
             <table>
                 <tr>
-                    <td className="tdone">
+                    <td>
                         <form className="login-form" onSubmit={handleSubmit}>
                             <label htmlFor="email">Email Address</label>
                             <input value={email} onChange={(e)=> setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
@@ -42,7 +42,7 @@ export const Login = () => {
                             
                         </form>
                     </td>
-                    <td className="tdtwo">
+                    <td>
                     <img className="bot" src={bot}></img>
                     </td>
                 </tr>

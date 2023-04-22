@@ -22,13 +22,13 @@ export const Signup = () => {
     return(
            
         <div className="form-container">
-            <div>
+            <div className="Header">
             <Header/>
             </div>
-            
+            <div className="Form">
             <table>
                 <tr>
-                    <td className="tdone">
+                    <td>
                         <form className="signup-form" onSubmit={handleSubmit}>
                             <label htmlFor="name">Name</label>
                             <input value={name} onChange={(e)=> setName(e.target.value)} type="name" placeholder="Enter your name" id="name" name="name" />
@@ -54,6 +54,7 @@ export const Signup = () => {
                     </td>
                 </tr>
             </table>
+            </div>
             <div>
             <Footer/>
             </div>
