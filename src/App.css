@@ -1,9 +1,13 @@
 .App {
-  text-align: left;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: left;
+<<<<<<< Updated upstream
+=======
+  background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
+ 
+>>>>>>> Stashed changes
 }
  
   
