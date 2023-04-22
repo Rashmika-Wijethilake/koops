@@ -21,7 +21,7 @@ export const Login = () => {
     return(
         
         <div className="form-container">
-            <div>
+            <div className="Header">
             <HeaderWithoutBtns/>
             </div>
 
@@ -43,7 +43,7 @@ export const Login = () => {
                             
                         </form>
                     </td>
-                    <td>
+                    <td className="Stdtwo">
                     <img className="bot" src={bot}></img>
                     </td>
                 </tr>
