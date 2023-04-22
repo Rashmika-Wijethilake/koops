@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import RequestDemoBtn from '../Buttons/RequestDemoBtn';
-import KoopsWithShadow from './../../images/KoopsWithShadow.png';
+import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
 import Header from '../Header/Header';
 import './LandingPage.css'
 
@@ -18,10 +18,7 @@ export default function LandingPage() {
                     <h2 className='heading'>Empowering learning through AI chatting- Where knowledge meets convenience! </h2>
                     </div>
                     <RequestDemoBtn />
-                  </div>                
-                  
-             
-          
+                  </div>   
             </div>
             <div className='footer'>
         <Footer />

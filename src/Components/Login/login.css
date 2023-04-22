@@ -1,3 +1,8 @@
+.form-container{
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
+}
 .Btnl {
     border:none;
     background-color: #0B488F;
@@ -20,7 +25,6 @@
   }
 
   .tdone {
- 
     padding-bottom: 10%;
    
   }
@@ -36,7 +40,7 @@
     line-height: 2em;
   }
 
-  .form-container, .login-form, .signup-form {
+  .login-form, .signup-form {
     display:flex;
     flex-direction: column;
     padding-left: 15%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import LogInBtn from '../Buttons/LogInBtn';
-import KoopsWithShadow from './../../Assests/Images/KoopsWithShadow.png'
+import KoopsWithShadow from './../../Assests/KoopsWithShadow.png'
 import HeaderWithoutBtns from '../Header/HeaderWithoutBtns';
 import './AccountVerified.css'
 
