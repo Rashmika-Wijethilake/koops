@@ -42,7 +42,7 @@ export const Login = () => {
                             
                         </form>
                     </td>
-                    <td>
+                    <td className="Stdtwo">
                     <img className="bot" src={bot}></img>
                     </td>
                 </tr>
