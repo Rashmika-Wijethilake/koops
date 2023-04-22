@@ -1,0 +1,82 @@
+
+.Btn {
+    border:none;
+    background-color: #0B488F;
+    height: 35px;
+    width: 140px;
+    border-radius: 90px;
+    cursor: pointer;
+    color: white;
+    margin-left: 65%;
+    margin-top: 18%;
+    margin-bottom: 10%;
+    
+  }
+
+  
+.tdtwo {
+ 
+    padding-left: 25%;
+  }
+  
+  .Stdtwo {
+   
+    padding-left: 25%;
+    padding-bottom: 15%;
+  
+  }
+
+  .fdivs{
+    line-height: 3em;
+  }
+
+  .form-container, .login-form, .signup-form {
+    display:flex;
+    flex-direction: column;
+    padding-left: 15%;
+    
+  }
+  
+  
+  label {
+    text-align: left;
+    padding-bottom: 5%;
+    padding-top: 8%;
+    color: white;
+  }
+  
+  input {
+    margin: 15;
+    width: 200%;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    background:transparent;
+  
+  }
+  
+  .btn-linktwo{
+    background: none;
+    border:none;
+    text-decoration: underline;
+    color: blue;
+     cursor: pointer;
+    font-size: small;
+       
+  
+  }
+  
+  .bot {
+    width: 85%;
+    align-items: right;
+  }
+  
+  
+  .txt{
+    background: none;
+    border:none;
+    color: white; 
+  
+  }
+  
