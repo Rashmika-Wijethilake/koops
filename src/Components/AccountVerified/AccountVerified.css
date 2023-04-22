@@ -1,6 +1,6 @@
 .page-container{
     display:flex;
-    flex-direction: column;width: 100%;
+    flex-direction: column;
   } 
   
   .content-wrap{
@@ -9,7 +9,7 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     height:90vh;
-    width: 1330px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

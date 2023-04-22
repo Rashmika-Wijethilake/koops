@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import LogInBtn from '../Buttons/LogInBtn';
-import KoopsWithShadow from './../../images/KoopsWithShadow.png';
+import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
 import HeaderWithoutBtns from '../Header/HeaderWithoutBtns';
 import './ChangedPassword.css'
 
