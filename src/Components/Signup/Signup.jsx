@@ -54,7 +54,10 @@ export const Signup = () => {
                     </td>
                 </tr>
             </table>
+            <div>
             <Footer/>
+            </div>
+            
         </div>
     )
 }

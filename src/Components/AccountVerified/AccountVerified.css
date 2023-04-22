@@ -1,7 +1,6 @@
 .page-container{
     display:flex;
-    flex-direction: column;
-    max-width:1800px;
+    flex-direction: column;width: 100%;
   } 
   
   .content-wrap{
