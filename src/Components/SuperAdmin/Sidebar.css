@@ -1,0 +1,36 @@
+.list {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list li {
+    margin-bottom: 30px;
+}
+
+.list li:last-child {
+    margin-top: 150px;
+}
+
+.text {
+    color: white;
+}
+
+.sidebar {
+    background-color: #3072C7;
+    padding: 10px;
+    width: 200px; 
+    height: auto;       
+}
+
+.img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 0%;
+}
+

@@ -1,0 +1,76 @@
+.homepage-container {
+    max-width: auto; 
+
+  }
+  
+.imageKoopsLogo{
+    justify-content: center;
+    height:100 px;
+    width:200px;
+
+}
+
+.menuicon-button{
+    background: none;
+    border:none;
+    cursor: pointer;
+    margin-left: 720px;
+    margin-bottom: 20px;
+        
+}
+
+.menuicon {
+    width: 50px;
+}
+
+.bot {
+    width: 220px;
+    display: flex;
+    justify-content: center;    
+
+}
+
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+.inline-table {
+    display: inline-table;
+    border-spacing: 8px;
+  }
+
+.text1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.text2 {
+    font-size: 35px;
+   
+}
+
+.create-icon {
+    width: 80px;
+    margin-left: 460px;
+   
+}
+
+
+.addicon-button {
+    background: none;
+    border:none;
+    cursor: pointer;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    
+}
+
+.addicon {
+    width: 80px;
+    
+}
