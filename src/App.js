@@ -1,14 +1,18 @@
+import logo from './logo.svg';
 import './App.css';
-import Accountdelete from './component/confirmdelete/Accountdelete';
-import Confirmdelete from './component/confirmdelete/Confirmdelete';
+import ForgotPassword from './Components/Forgotpassword/ForgotPassword';
+import Verification from './Components/Forgotpassword/Verification';
+import Studentdeatailsupdate from './Components/Forgotpassword/StudentDeatils upadate';
+
 
 
 function App() {
   return (
-    <div className="App">
-      {/* <Accountdelete /> */}
-      <Confirmdelete />
-     
+    <div classNameName="App">
+  
+        
+      < Verification/>
+      
       
     </div>
   );
