@@ -1,0 +1,21 @@
+.button-SignOut{
+    background-color: #2DA1D8;
+    color: white;
+    width:150px;
+    height:30px;
+    padding: 5px;
+    border: none; 
+    border-radius: 30px; 
+    font-family:Arial; 
+    font-size:15px; 
+    display: flex;
+    flex-direction:row;
+    row-gap:15px ;
+    justify-content: center;
+
+
+}
+.SignOutBtn{
+    width: 15px;
+    height: 15px;
+}
