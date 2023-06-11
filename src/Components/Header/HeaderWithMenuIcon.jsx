@@ -6,7 +6,7 @@ import MenuIcon from './../../Assests/MenuIcon.png';
 const HeaderWithMenuIcon = () =>{
     return(        
 
-    <div className="Container">
+    <div className="Header-Container">
         <div className = "Row">
            {/* Column1 */}
            <div className = "column">

@@ -10,6 +10,8 @@ import SignOut from './Components/SignOut/SignOut.jsx'
 import Homepage from './Components/Homepage/Homepage';
 import Sidebar from './Components/SuperAdmin/Sidebar';
 import Dashboard from './Components/SuperAdmin/Dashboard';
+import AdminSidePanel from './Components/Admin/Admin Comp/AdminSidePanel';
+import Verification from './Components/Forgotpassword/Verification';
 
 
 
@@ -17,7 +19,7 @@ function App() {
  
    return (
     <div className="App">
-   <LandingPage/>
+   <Verification/>
 
   
     </div>

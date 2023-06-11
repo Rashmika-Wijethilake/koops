@@ -4,9 +4,9 @@ import './Verification.css'
 
 export default function Verification() {
   return (
-    <div className="header">
+    <div className='body-container'>
        <div className="container">
-       <h1 class="heading">Email Verification</h1>
+       <h1 class="verify-heading">Email Verification</h1>
        <p class ="para">We have sent a code your Email</p>
        
        <div class="container-box">

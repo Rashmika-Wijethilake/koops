@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
+import Footer from '../../Components/Footer/Footer';
 import RequestDemoBtn from '../Buttons/RequestDemoBtn';
 import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
 import Header from '../Header/Header';
@@ -17,11 +17,11 @@ export default function LandingPage() {
                     <h1 className='heading'> Hi! I'm Koops </h1>
                     <h2 className='heading'>Empowering learning through AI chatting- Where knowledge meets convenience! </h2>
                     </div>
-                    <RequestDemoBtn />
+                    <RequestDemoBtn/>
                   </div>   
             </div>
             <div className='footer'>
-        <Footer />
+        <Footer/>
         </div>
       </div>
     );

@@ -5,7 +5,7 @@ import KoopsLogo from './../../Assests/Koops-icon3.png';
 const HeaderWithoutBtns = () =>{
     return(        
 
-    <div className="Container">
+    <div className="Header-Container">
         <div className = "Row">
             {/* Column1 */}
             <div className = "column">
