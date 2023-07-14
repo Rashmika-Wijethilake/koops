@@ -76,14 +76,13 @@
    .reset_btn:hover{
     background-color: #025ad6;
    }
-   .password{
+   /* .password-ver{
        
        padding: 5px;
-       
        background-color: white;
        border-radius: 5px;
    height: 30px;
-   }
+   } */
    .content{
        font-size: 14px;
    }

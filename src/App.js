@@ -15,6 +15,10 @@ import Verification from './Components/Forgotpassword/Verification';
 import AdminDashboard from './Components/Admin/AdminDashboard/AdminDashboard';
 import HeaderWithAdminGreet from './Components/Header/HeaderWithAdminGreet';
 import Header from './Components/Header/Header';
+import StudentDetailsUpdated from './Components/Admin/StudentDetailsUpdated/StudentDetailsUpdatedAdmin';
+import StudentDetailsUpdatedAdmin from './Components/Admin/StudentDetailsUpdated/StudentDetailsUpdatedAdmin';
+import StudentDetailsUpBox from './Components/Admin/StudentDetailsUpdated/StudentDetailsUpBox';
+import ForgotPassword from './Components/Forgotpassword/ForgotPassword';
 
 
 
@@ -22,7 +26,7 @@ function App() {
  
    return (
     <div className="App">
-   <ChangedPassword/>
+   <ForgotPassword/>
 
   
     </div>

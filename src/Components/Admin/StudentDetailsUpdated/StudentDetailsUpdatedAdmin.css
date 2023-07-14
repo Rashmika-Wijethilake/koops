@@ -1,0 +1,11 @@
+.StudentDetailsUpdated{
+    background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+  
+}
+
+

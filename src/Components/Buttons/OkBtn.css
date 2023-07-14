@@ -1,0 +1,15 @@
+.button-OK{
+    background-color: #2AA7DC;
+    color: white;
+    width:160px;
+    height:60px;
+    padding: 5px;
+    border: none; 
+    border-radius: 50px; 
+    font-family:Arial; 
+    font-size: 20px;
+    
+}
+.OkBtncontainer{
+    align-items: center;
+}

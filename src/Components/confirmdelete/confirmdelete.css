@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(269.83deg, #3064C2 0.04%, #2DA2D8 54.28%, #88E7FF 99.74%);
+}
+
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: aliceblue;
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: 25vh;
+    border-radius: 20px;
+    padding: 40px 70px 60px 70px; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.Confirm{
+    background-color: #0B488F;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    gap: 30px;
+    
+}
+.Confirm:hover{
+    background-color: #113661;
+}
+

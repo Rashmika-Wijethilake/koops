@@ -1,0 +1,206 @@
+.container {
+    margin: auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    width: 793px;
+    height: 894px;
+    position: relative;
+    background-color: #2D9DD7;
+    border-radius: 55px;
+     
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 35;
+    margin-inline-end: 230px;
+    margin-bottom: 150px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+     position: absolute;
+     bottom: 80px;
+  
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: green;
+    color: white;
+  }
+  
+  button[type="button"] {
+    background-color: red;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  .footer-container {
+    width: 793px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+  }
+  
+  p:hover {
+    text-decoration: underline;
+  }
+  .footer {
+    position: relative;
+     display: flex;
+     justify-content: space-around;
+     
+    width: 100%;
+    min-height: 293px;
+    background-color: rgb(0, 34, 255);
+  }
+  
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin: 10px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: black;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 25px;
+  }
+  .footer-left{
+    position: absolute;
+     left: 0px;
+     height: 100%;
+     margin: 10px 0px 0px 50px;
+    
+  }
+  .footer_icons{
+    position: absolute;
+    right: 0px;
+    height: 100%;
+  margin: 10px 50px 0px 0px;
+   
+  }
+  .the_links{
+    color: white;
+    text-decoration: none;
+  }
+  .icons{
+    margin: 5px;
+  }
+   .mainholders{
+    position: relative;
+    width: 80%;
+    margin: 6px;
+   }
+  .thebables{
+   display: inline;
+   float: left;
+   position: absolute;
+   left: 0px;
+      margin-left: 80px;
+      margin-bottom: 10px;
+      color: white;
+      font-size: 17px;
+     
+  }
+  .inputs{
+    display: inline;
+    float: right;
+    right: 0px;
+  
+    border-radius: 20px;
+    width: 50%;
+     
+  }
+  .asctionbuttons{
+    border-radius: 20px;
+  }
+  .womanimage{
+    position: relative;
+    
+  }
+  .infor_holder{
+    position: relative;
+    width: 40%;
+     margin-top: 50px;
+     margin-left: 50px;
+     margin-bottom: 100px;
+  }
+  .mainheading{
+    display: inline-block;
+    float: right;
+    right: 50px;
+    font-size: 20px;
+    color: white;
+    
+  }
+  .studentid{
+    display: inline-block;
+    float: right;
+    position: relative;
+    left: 100px;
+    top: 14px;
+    font-size: 20px;
+    color: white;
+  }
+  
