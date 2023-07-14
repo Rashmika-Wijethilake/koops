@@ -12,6 +12,9 @@ import Sidebar from './Components/SuperAdmin/Sidebar';
 import Dashboard from './Components/SuperAdmin/Dashboard';
 import AdminSidePanel from './Components/Admin/Admin Comp/AdminSidePanel';
 import Verification from './Components/Forgotpassword/Verification';
+import AdminDashboard from './Components/Admin/AdminDashboard/AdminDashboard';
+import HeaderWithAdminGreet from './Components/Header/HeaderWithAdminGreet';
+import Header from './Components/Header/Header';
 
 
 
@@ -19,7 +22,7 @@ function App() {
  
    return (
     <div className="App">
-   <Verification/>
+   <ChangedPassword/>
 
   
     </div>

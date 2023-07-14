@@ -1,45 +1,31 @@
 import React, { Component } from 'react'
 import "./AdminDashboard.css"
-import HeaderWithoutBtns from '../../Header/HeaderWithoutBtns'
 import UpdateBtn from './../../Buttons/UpdateBtn'
 import RemoveBtn from '../../Buttons/RemoveBtn'
+import HeaderWithAdminGreet from '../../Header/HeaderWithAdminGreet'
+import AdminSidePanel from '../Admin Comp/AdminSidePanel'
 export class AdminDashboard extends Component {
   render() {
     return (
         <div className='Main'>
           <div className='HeaderSection'>
-            <div className='Header'>
-            <HeaderWithoutBtns/>
-            </div>
-          
-          {/* <h1>Hello Admin</h1> */}
+            <HeaderWithAdminGreet/>
           </div>
-        
-
-            <div className='Text1'>Manage Students</div>
-                <div className='flex1'>
-                    <div className='StudentDetails'>
-                         <UpdateBtn/>
-                  
-                         <RemoveBtn/>
+            <div className='Text1'>
+              <h1>Manage Students</h1>
+              </div>
+              <div className='Body-Admin'>
+                    <div className='AdminSidePanel'>
+                    <AdminSidePanel/>
                     </div>
-                    <div className='StudentDetails'>
-                         <UpdateBtn/>
-                  
-                         <RemoveBtn/>
+                      <div className='flex1'>
+                          <div className='StudentDetails'>
+                              <UpdateBtn/>
+                              <RemoveBtn/>
+                          </div>
+                        
                     </div>
-                    <div className='StudentDetails'>
-                         <UpdateBtn/>
-                  
-                         <RemoveBtn/>
-                    </div>
-                    <div className='StudentDetails'>
-                         <UpdateBtn/>
-                  
-                         <RemoveBtn/>
-                    </div>
-                </div>
-
+              </div>
       </div>
     )
   }
