@@ -1,10 +1,10 @@
-.page-container{
+.page-container-LP{
     display:flex;
     flex-direction: column;
     max-width:2005px;
   } 
   
-  .content-wrap{
+  .content-wrap-LP{
      /* flex:5; */
     background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
     border-top-left-radius: 50px;
@@ -16,7 +16,7 @@
     align-items: center;
     }
 
-    .bodyText{
+    .bodyText-LP{
     
         text-align:center;
          padding: 40px;
@@ -24,12 +24,12 @@
     
       }
 
-      .TextContainer{
+      .TextContainer-LP{
         margin-top: 50px;
         margin-bottom: 50px;
      }
     
-     .heading{
+     .heading-LP{
       color: white;
       font-family: Arial, Helvetica, sans-serif;
    }

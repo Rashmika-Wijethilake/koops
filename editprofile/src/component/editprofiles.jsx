@@ -1,15 +1,13 @@
 import React from "react";
-import Footer from '../../Components/Footer/Footer';
-import womanImage from './../../Assests/woman.png';
-import SaveBtn from './../../Components/Buttons/SaveBtn';
-import CancelBtn from './../../Components/Buttons/CancelBtn';
-import './editprofile.css'
-
+import img1 from './../img/fb.png';
+import img2 from './../img/inster.png';
+import img3 from './../img/twitter.png';
+import womanImage from './../img/woman.png'
 export default function editprofile() {
 
     return (
         <div className="App">
-          <div className="container-editprofile">
+          <div className="container">
             <div className='infor_holder'>
     
             <img src={womanImage} className = "womanimage"/>
@@ -18,54 +16,86 @@ export default function editprofile() {
     
             </div>
          
-            <form className="formstudent">
+            <form>
               <div className='mainholders'>
-              <label htmlFor="name" className='label-editprofile'>Name:</label>              
+              <label htmlFor="name" className='thebables'>Name:</label>
+              
               <input type="text" id="name" name="name" placeholder="Enter your name" required className='inputs'/>
     
               </div>
     
               <div className='mainholders'>
-              <label htmlFor="email" className='label-editprofile'>Email:</label>
+              <label htmlFor="email" className='thebables'>Email:</label>
               <input type="email" id="email" name="email" placeholder="Enter your email" required  className='inputs'/>
     
                 </div>
     
                 <div className='mainholders'>
     
-                <label htmlFor="studentId" className='label-editprofile'>Student ID:</label>
+                <label htmlFor="studentId" className='thebables'>Student ID:</label>
               <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" required className='inputs' />
                   </div>
     
                   <div className='mainholders'>
     
-                <label htmlFor="studentId" className='label-editprofile'>User name</label>
+                <label htmlFor="studentId" className='thebables'>User name</label>
               <input type="text" id="username" name="studentId" placeholder="Enter your username" required className='inputs' />
                   </div>
     
                   <div className='mainholders'>
     
-    <label htmlFor="studentId" className='label-editprofile'>Password</label>
+    <label htmlFor="studentId" className='thebables'>Password</label>
     <input type="password" id="username" name="studentId" placeholder="Enter your password" required className='inputs' />
       </div>
     
       <div className='mainholders'>
     
-    <label htmlFor="studentId" className='label-editprofile'>Confirm password</label>
+    <label htmlFor="studentId" className='thebables'>Confirm password</label>
     <input type="password" id="username" name="studentId" placeholder="Confirm your password" required className='inputs' />
       </div>
     
               <div className="buttons">
-                <SaveBtn/>
-                <CancelBtn/>
+                <button type="submit" className='asctionbuttons'>Save</button>
+                <button type="button" className='asctionbuttons'>Cancel</button>
               </div>
             </form>
           </div>
          
           <div className="footer">
-          <Footer/>  
+            <div className="footer-left">
+              <ul>
+                <li>
+                  <a href=" "  >Copyright</a>
+                </li>
+                
+                <li>
+                  <a href=" "  >About Us</a>
+                </li>
+                <li>
+                <a href=" "  >help</a>
+                 
+                </li>
+              </ul>
+            </div>
+    
+            <div className='footer_icons'>
+              <p>get download icons</p>
+              <div className='icon_holder'>
+          <img src={img1} className='icons'/>
+          <img src={img2} className='icons'/>
+          <img src={img3} className='icons'/>
+    
+    
+              </div>
+              <p>Developed by</p>
+              <p>DevKoops</p>
+    
+            </div>
           </div>
-        
+    
+    
+    
+    
         </div>
         
     );

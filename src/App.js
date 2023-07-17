@@ -16,12 +16,6 @@ import VerifyEmail from './Components/VerifyEmail/VerifyEmail';
 import Accountdelete from './Components/confirmdelete/Accountdelete';
 import Confirmdelete from './Components/confirmdelete/Confirmdelete';
 import ForgotPassword from './Components/Forgotpassword/ForgotPassword';
-import Verification from './Components/Forgotpassword/Verification';
-import { addStudent } from './Components/EditProfile/addstudent';
-import EditProfile from './Components/EditProfile/EditProfile';
-import editprofile from './Components/EditProfile/EditProfile';
-import CreateStudyGroup from './Components/StudyGroup/CreateStudyGroup/CreateStudyGroup';
-import MeetingRecords from './Components/MeetingRecords/MeetingRecords';
 
 
 
@@ -29,9 +23,9 @@ function App() {
  
    return (
     <div className="App">
-   <Dashboard/>
+   <ForgotPassword/>
 
-  
+    
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.button-CancelBtn{
+    background-color: red;;
+    color: white;
+    width:250px;
+    height:60px;
+    border: none; 
+    border-radius: 5px; 
+    font-family:Arial; 
+    font-size:25px; 
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    }
+    button:hover {
+        opacity: 0.8;
+      }
