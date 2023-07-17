@@ -16,7 +16,7 @@ export default function VerifyEmail() {
                 <img src={KoopsWithShadow} alt="Koops"></img>
                 
                 <div className='TextContainer'>
-                <h1 className='heading'> Please verify your email address.. </h1>
+                <h1 className='heading2'> Please verify your email address.. </h1>
                 </div>
               <emailprops email= "example@gmail.com"/>
              <DoneBtn/>

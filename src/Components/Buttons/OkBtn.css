@@ -1,5 +1,5 @@
-.button-Login{
-    background-color: #0B488F;
+.button-OK{
+    background-color: #2AA7DC;
     color: white;
     width:160px;
     height:60px;
@@ -7,6 +7,9 @@
     border: none; 
     border-radius: 50px; 
     font-family:Arial; 
-    font-size:30px; 
+    font-size: 20px;
     
+}
+.OkBtncontainer{
+    align-items: center;
 }

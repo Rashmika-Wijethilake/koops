@@ -1,4 +1,4 @@
-.button-Login{
+.button-Remove{
     background-color: #2AA7DC;
     color: white;
     width:100px;
@@ -8,5 +8,5 @@
     border-radius:15px; 
     font-family:Arial; 
     font-size:15px; 
-
+    
 }

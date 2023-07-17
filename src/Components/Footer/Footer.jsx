@@ -5,7 +5,7 @@ import TwiiterIcon from './../../Assests/Icon awesome-twitter.png'
 import InstagramIcon from './../../Assests/Icon awesome-instagram.png'
 const Footer = () =>{
     return(
-        <footer className="container">
+        <footer className="Footer-container">
             <div className = "row">
             {/* Column1 for other linked pages */}
                 <div className = "col">
