@@ -1,8 +1,10 @@
 import React from 'react';
 import "./Header.css";
 import KoopsLogo from './../../Assests/Koops-icon3.png';
-//import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 const Header = () =>{
+   const navigate = useNavigate();
     return(        
 
     <div className="Container">
@@ -17,11 +19,11 @@ const Header = () =>{
             <div className = "column1">
                 <div className="container2">
                     <div className = "Login-ButtonContainer">
-                        <button href = " " className='LogInButton'>Login</button>
+                    <button onclick={()=>navigate(-1)} className='LogInButton'>Login</button>
                     </div> 
             {/* Column3 */}
                     <div className = "SignUp-ButtonContainer">
-                        <button href = " " className='SignUpButton'> SignUp</button>
+                        <button onclick="" className='SignUpButton'> SignUp</button>
                     </div>
                 </div>            
             </div>            

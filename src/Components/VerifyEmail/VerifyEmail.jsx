@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import KoopsWithShadow from './../../images/KoopsWithShadow.png';
+import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
 import HeaderWithoutBtns from '../Header/HeaderWithoutBtns';
 import DoneBtn from '../Buttons/DoneBtn';
 import './VerifyEmail.css'

@@ -10,6 +10,11 @@ import SignOut from './Components/SignOut/SignOut.jsx'
 import Homepage from './Components/Homepage/Homepage';
 import Sidebar from './Components/SuperAdmin/Sidebar';
 import Dashboard from './Components/SuperAdmin/Dashboard';
+import StudyGroupEdit from './Components/StudyGroup/StudyGroupEdit';
+import Studygroups from './Components/StudyGroup/Studygroups';
+import VerifyEmail from './Components/VerifyEmail/VerifyEmail';
+import Accountdelete from './Components/confirmdelete/Accountdelete';
+import Confirmdelete from './Components/confirmdelete/Confirmdelete';
 
 
 
@@ -17,7 +22,7 @@ function App() {
  
    return (
     <div className="App">
-   <LandingPage/>
+   <Confirmdelete/>
 
   
     </div>

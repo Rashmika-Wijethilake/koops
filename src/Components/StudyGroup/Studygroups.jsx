@@ -1,9 +1,9 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import HeaderWithMenuIcon from "../Header/HeaderWithMenuIcon";
-import KOOPS from "./../../images/Koops Big Image.png";
-import GroupIcon from "./../../images/group_icon.png";
-import AddIcon from "./../../images/plusIcon.png";
+import KOOPS from "./../../Assests/Koops Big Image.png";
+import GroupIcon from "./../../Assests/group_icon.png";
+import AddIcon from "./../../Assests/plusIcon.png";
 import "./Studygroup.css"
 
 export default function Studygroups(){

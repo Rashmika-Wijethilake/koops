@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 import './LandingPage.css'
 
 export default function LandingPage() {
-    return (
+      return (
       <div className ="page-container" >
         <Header/>
             <div className = "content-wrap">
@@ -20,8 +20,9 @@ export default function LandingPage() {
                     <RequestDemoBtn />
                   </div>   
             </div>
-            <div className='footer'>
-        <Footer />
+
+        <div className='footer'> 
+          <Footer />
         </div>
       </div>
     );
