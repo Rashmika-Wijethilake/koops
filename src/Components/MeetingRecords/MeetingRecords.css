@@ -1,0 +1,95 @@
+.OuterDiv{
+    width: 1220px;
+    height: 680px;
+    border-radius: 40px 40px 0px 0px;
+    background:linear-gradient(to top left, #E8E8E8, #306FC6, #2F81CC, #2E8BD0, #2E93D3, #2E9AD5, #2DA2D8, #88E7FF );
+    margin: 0px auto;
+    margin-top: 152px;
+    position: relative;
+    border: #707070;
+   }
+   .cancleImage{
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    cursor: pointer;
+   }
+   .upperHolder{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    top: 60px;
+   
+    margin: 0px auto;
+   }
+   .examplegroupText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+   }
+   .studtmeeting{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(86, 86, 212);
+    padding: 10px;
+    border-radius: 20px;
+  
+   }
+   .memberlistHolder{
+    position: relative;
+    top: 70px;
+    width: 80%;
+    margin: 0px auto;
+   
+   }
+   .memberlistText{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   }
+   .inputfield{
+    position: relative;
+    width: 60%;
+    background-color: aliceblue;
+    height: 34px;
+    border-radius: 20px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .meetinhistoryText{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    top: 66px;
+    font-size: 18px;
+   }
+   
+   .mainheadtext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+   }
+   .therows{
+    border: 2px solid white;
+  
+   }
+   .thetable {
+    border: 2px solid rgb(255, 255, 255);
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 80px;
+    position: relative;
+  }
+  
+  .thetable th, .thetable td {
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+  }

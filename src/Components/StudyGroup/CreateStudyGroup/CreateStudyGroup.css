@@ -1,0 +1,212 @@
+
+.koopnew {
+    position: absolute;
+    top: -18px;
+    right: 496px;
+    width: 165px;
+    height: 108px;
+  z-index: 10;
+  }
+  
+  
+  .mainContainer{
+    width: 793px;
+    height: 894px;
+    background-color: #3069C4;
+    border-radius: 55px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 44px;
+  }
+  .mainheading{
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 30px;
+    right: 0px;
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .contentHolder{
+    position: relative;
+    width: 90%;
+   
+    margin: 0px auto;
+    padding: 5px;
+  
+  }
+  .inputFields{
+    position: relative;
+    display: inline-block;
+    width: 512px;
+    height: 35px;
+    top: 0px;
+    left: 27px;
+    border: none;
+    background-color: #FFFFFF;
+    opacity: 37%;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    border-radius: 30px;
+   
+  }
+  .mainNames{
+   position: relative;
+   display: inline-block;
+   color: white;
+   margin-top: 25px;
+   left: 32px;
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+  .holders{
+    margin: 1px;
+  }
+  .addmember{
+    margin: 15px;
+    margin-left: 75px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .adduserholder{
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 80%;
+  }
+  .innerHolders{
+    position: relative;
+    width: 634px;
+    height: 33px;
+    margin: 5px;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .secondholder{
+    position: relative;
+    top: 40px;
+    margin: 0px auto;
+    width: 103%;
+    height: 300px;
+   
+    overflow-y: scroll;
+  }
+  .creatButton{
+  
+   position: relative;
+    top: 46px;
+    width: 159.69px;
+    height: 53px;
+   margin-top: 20px;
+    background-color: #2AA7DC;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .ntunHolder{
+    width: 103%;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .uppperDiv{
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+   margin: 15px;
+    width: 100%;
+  }
+   .fimg{
+    position: relative;
+   left: 140px;
+   margin-top: 36px;
+   width: 48.29px;
+   height: 31px;
+   }
+   .closeimg{
+    position: relative;
+    right: 48px;
+    margin-top: 38px;
+    width: 40px;
+    height: 40px;
+   }
+   .threeDoted{
+    position: relative;
+    width: 28px;
+    height: 3px;
+    margin-top: 12px;
+    right: 26px;
+   }
+   .addbuuton{
+    position: relative;
+    left: -25px;
+    width: 87.71px;
+    height: 40.5px;
+    margin-left: 0px;
+    border-radius: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: -4px;
+  border: none;
+  cursor: pointer;
+    background-color: #2AA7DC;
+   }
+   .theIndexNumber{
+    margin-top: 5px;
+    font-size: 19px;
+    float: left;
+    position: absolute;
+    left: 108px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+   }
+   .firtinput{
+   
+    margin-left: 12px;
+   }
+   .addedMembersName{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 5px;
+   }
+   .search{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    top: 93px;
+    left: 335px;
+    color: black;
+   }
+  
+   .img1{
+    width: 41.73px;
+    height: 43px;
+    margin-left: 43px;
+    margin-top: -5px;
+   }
+  
+   .woman{
+    width: 41.73px;
+    height: 43px;
+    margin-left: 43px;
+    margin-top: -5px;
+   }
+  
+   

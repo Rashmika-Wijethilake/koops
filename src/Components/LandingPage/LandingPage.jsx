@@ -23,8 +23,6 @@ export default function LandingPage() {
 
         <div className='footer'> 
           <Footer />
-
-
         </div>
       </div>
     );

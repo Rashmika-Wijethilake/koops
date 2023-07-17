@@ -1,8 +1,9 @@
 import React from "react";
-import img1 from './../img/fb.png';
-import img2 from './../img/inster.png';
-import img3 from './../img/twitter.png';
-import womanImage from './../img/woman.png'
+import img1 from './../../Assests/fb.png';
+import img2 from './../../Assests/inster.png';
+import img3 from './../../Assests/twitter.png';
+import womanImage from './../../Assests/woman.png'
+import './editprofile.css'
 export default function editprofile() {
 
     return (

@@ -1,11 +1,11 @@
 import React from "react";
 import './Dashboard.css';
-import koop from './../../Assests/Koops-icon3.png';
-import woman from './../../Assests/woman.png';
-import student from './../../Assests/student.png';
-import admin from './../../Assests/admin.png';
-import material from './../../Assests/material.png';
-import twel from './../../Assests/twel.png';
+import koop from './../../../Assests/Koops-icon3.png';
+import woman from './../../../Assests/woman.png';
+import student from './../../../Assests/student.png';
+import admin from './../../../Assests/admin.png';
+import material from './../../../Assests/material.png';
+import twel from './../../../Assests/twel.png';
 
 const Dashboard = () => {
 

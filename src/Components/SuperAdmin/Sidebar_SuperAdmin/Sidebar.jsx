@@ -1,8 +1,8 @@
 import React from "react";
-import student from './../../Assests/student.png';
-import admin from './../../Assests/admin.png';
-import material from './../../Assests/material.png';
-import woman from './../../Assests/woman.png';
+import student from './../../../Assests/student.png';
+import admin from './../../../Assests/admin.png';
+import material from './../../../Assests/material.png';
+import woman from './../../../Assests/woman.png';
 import './Sidebar.css'
 
 
