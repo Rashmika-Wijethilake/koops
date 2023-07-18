@@ -24,14 +24,9 @@ function App() {
  
    return (
     <div className="App">
-<<<<<<< Updated upstream
-=======
+
    <LandingPage/>
->>>>>>> Stashed changes
-
-   <MeetingRecords/>
-
-    </div>
+       </div>
   );
 }
 
