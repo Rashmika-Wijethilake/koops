@@ -16,6 +16,7 @@ import VerifyEmail from './Components/VerifyEmail/VerifyEmail';
 import Accountdelete from './Components/confirmdelete/Accountdelete';
 import Confirmdelete from './Components/confirmdelete/Confirmdelete';
 import ForgotPassword from './Components/Forgotpassword/ForgotPassword';
+import MeetingRecords from './Components/MeetingRecords/MeetingRecords';
 
 
 
@@ -24,7 +25,7 @@ function App() {
    return (
     <div className="App">
 
-   <Signup/>
+   <MeetingRecords/>
 
     </div>
   );
