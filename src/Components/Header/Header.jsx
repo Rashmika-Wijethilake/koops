@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Header = () =>{
    const navigate = useNavigate();
+   const handleClick =() => {
+    navigate ("/src/Components/Login/Login.jsx")
+   }
     return(        
 
     <div className="Container">
@@ -23,7 +26,7 @@ const Header = () =>{
                     </div> 
             {/* Column3 */}
                     <div className = "SignUp-ButtonContainer">
-                        <button onclick="" className='SignUpButton'> SignUp</button>
+                        <button onclick={()=>navigate(-1)}  className='SignUpButton'> SignUp</button>
                     </div>
                 </div>            
             </div>            
