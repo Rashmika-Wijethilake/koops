@@ -4,7 +4,16 @@ import KoopsLogo from './../../Assests/Koops-icon3.png';
 
 
 const Header = () =>{
+<<<<<<< HEAD
       return(        
+=======
+   const navigate = useNavigate();
+   const handleClick =() => {
+    navigate ("/src/Components/Login/Login.jsx")
+   }
+    return(        
+
+>>>>>>> d4021788fa11440fc0fcf0f78710882745c70e19
     <div className="Container">
         <div className = "Row">
             {/* Column1 */}
@@ -21,7 +30,7 @@ const Header = () =>{
                     </div> 
             {/* Column3 */}
                     <div className = "SignUp-ButtonContainer">
-                        <button onclick="" className='SignUpButton'> SignUp</button>
+                        <button onclick={()=>navigate(-1)}  className='SignUpButton'> SignUp</button>
                     </div>
                 </div>            
             </div>            
