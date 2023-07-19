@@ -22,7 +22,7 @@ const Header = () =>{
                     </div> 
             {/* Column3 */}
                     <div className = "SignUp-ButtonContainer">
-                        <button onclick={()=>navigate(-1)}  className='SignUpButton'> SignUp</button>
+                        <button onclick=""  className='SignUpButton'> SignUp</button>
                     </div>
                 </div>            
             </div>            
