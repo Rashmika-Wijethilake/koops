@@ -24,14 +24,9 @@ function App() {
  
    return (
     <div className="App">
-
    <LandingPage/>
-<<<<<<< HEAD
-
     </div>
-=======
-       </div>
->>>>>>> d4021788fa11440fc0fcf0f78710882745c70e19
+
   );
 }
 

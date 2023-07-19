@@ -4,16 +4,8 @@ import KoopsLogo from './../../Assests/Koops-icon3.png';
 
 
 const Header = () =>{
-<<<<<<< HEAD
       return(        
-=======
-   const navigate = useNavigate();
-   const handleClick =() => {
-    navigate ("/src/Components/Login/Login.jsx")
-   }
-    return(        
 
->>>>>>> d4021788fa11440fc0fcf0f78710882745c70e19
     <div className="Container">
         <div className = "Row">
             {/* Column1 */}
