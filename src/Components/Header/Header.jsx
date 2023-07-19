@@ -1,12 +1,10 @@
 import React from 'react';
 import "./Header.css";
 import KoopsLogo from './../../Assests/Koops-icon3.png';
-import { useNavigate } from 'react-router-dom';
+
 
 const Header = () =>{
-   const navigate = useNavigate();
-    return(        
-
+      return(        
     <div className="Container">
         <div className = "Row">
             {/* Column1 */}
@@ -19,7 +17,7 @@ const Header = () =>{
             <div className = "column1">
                 <div className="container2">
                     <div className = "Login-ButtonContainer">
-                    <button onclick={()=>navigate(-1)} className='LogInButton'>Login</button>
+                    <button onclick="" className='LogInButton'>Login</button>
                     </div> 
             {/* Column3 */}
                     <div className = "SignUp-ButtonContainer">
