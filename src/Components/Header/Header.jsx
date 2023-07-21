@@ -1,9 +1,12 @@
 import React from 'react';
+import {useState, useEffect} from 'react';
+import {Route, Switch} from "react-router-dom";
 import "./Header.css";
 import KoopsLogo from './../../Assests/Koops-icon3.png';
 
 
 const Header = () =>{
+    const [activePage, setActivePage] = useState("LandingPage")
       return(        
 
     <div className="Container">
