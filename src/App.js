@@ -18,14 +18,15 @@ import Confirmdelete from './Components/confirmdelete/Confirmdelete';
 import ForgotPassword from './Components/Forgotpassword/ForgotPassword';
 import MeetingRecords from './Components/MeetingRecords/MeetingRecords';
 import StudentDetailsUpBox from './Components/Admin/StudentDetailsUpdated/StudentDetailsUpBox';
-import StudentRemovedDialogBox from './Components/Admin/StudentRemoved/StudentRemovedDialogBox.jsx'
+import StudentRemovedDialogBox from './Components/Admin/StudentRemoved/StudentRemovedDialogBox.jsx';
+import AdminSidePanel from './Components/Admin/Admin Comp/AdminSidePanel';
 
 
 function App() {
  
    return (
     <div className="App">
-    <StudentDetailsUpBox/>
+    <AdminSidePanel/>
     </div>
 
   );
