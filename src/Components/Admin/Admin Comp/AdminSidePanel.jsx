@@ -7,7 +7,7 @@ export default function AdminSidePanel() {
     return (
 
       <div className ="page-container" >
-            <div className = "content-wrap">
+            <div className = "content-wrap-admin-pan">
                 <div className = "bodyText">
                 <img className = 'AdminImage' src={AdminImage} alt="Admin"></img>
                 <div className='TextContainer'>

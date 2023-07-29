@@ -7,13 +7,15 @@
     position: absolute; 
     left: 80%;
     transform: translate(-1%);
+    
   } 
   
-  .content-wrap{
+  .content-wrap-admin-pan{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-content: flex-start;
+   
     }
 
  .bodyText{

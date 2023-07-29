@@ -20,13 +20,14 @@ import MeetingRecords from './Components/MeetingRecords/MeetingRecords';
 import StudentDetailsUpBox from './Components/Admin/StudentDetailsUpdated/StudentDetailsUpBox';
 import StudentRemovedDialogBox from './Components/Admin/StudentRemoved/StudentRemovedDialogBox.jsx';
 import AdminSidePanel from './Components/Admin/Admin Comp/AdminSidePanel';
+import AdminDashboard from './Components/Admin/AdminDashboard/AdminDashboard';
 
 
 function App() {
  
    return (
     <div className="App">
-    <AdminSidePanel/>
+    <Login/>
     </div>
 
   );
