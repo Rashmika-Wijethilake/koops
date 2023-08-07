@@ -1,8 +1,9 @@
 import React from 'react';
 import Footer from '../../Components/Footer/Footer';
-import RequestDemoBtn from '../Buttons/RequestDemoBtn';
+import RequestDemoBtn from '../../Components/Buttons/RequestDemoBtn';
 import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
-import Header from '../Header/Header';
+import { Route } from 'react-router-dom';
+import Header from '../../Components/Header/Header';
 import './LandingPage.css'
 
 export default function LandingPage() {

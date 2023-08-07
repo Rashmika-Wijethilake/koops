@@ -1,4 +1,4 @@
-.Header-Container{
+.header-Container{
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -6,10 +6,11 @@
     margin: 0 ;
     width:100%;
     height:130px;
+    background-color: #fff;
     
 }
 
-.Row{
+.header-Row{
     display: grid;
     grid-template-columns: repeat(auto-fill, 
                            minmax(200px, 1fr));
@@ -17,7 +18,7 @@
     
 }
 
-.column{
+.hd-column{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -28,7 +29,7 @@
     width:200px;
 }
 
-.column1{
+.hd-column1{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -39,20 +40,20 @@
     width:200px;
 }
 
-.container2{
+.header-container2{
     display:flex;
     align-content: center;
     justify-content: center;
 }
 
-.Login-ButtonContainer{
+.hd-Login-ButtonContainer{
    align-items: center;
    margin-right:20px;
    width: 100%;
    
   }
   
-  .LogInButton{
+  .hd-LogInButton{
     background-color: #1560A4;
     color: white; 
     padding: 15px; 
@@ -63,13 +64,17 @@
     width:150px;
   }
 
-  .SignUp-ButtonContainer{
+  .hd-link{
+    text-decoration:none ;
+  }
+
+  .hd-SignUp-ButtonContainer{
     align-items: center;
     margin-left:20px;
     width: 100%;
 }
 
-.SignUpButton{
+.hd-SignUpButton{
     background-color:#1560A4;
     color: white; 
     padding: 15px; 
@@ -80,14 +85,14 @@
     width:150px;
 }
 
-.imageCont{
+.hd-imageCont{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     }
 
-.imageKoopsLogo{
+.hd-imageKoopsLogo{
     justify-content: center;
     height:100 px;
     width:200px;

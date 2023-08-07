@@ -1,28 +1,32 @@
 import React from 'react';
 import "./Header.css";
 import KoopsLogo from './../../Assests/Koops-icon3.png';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Header = () =>{
+    const navigate = useNavigate();
+
       return(        
 
-    <div className="Container">
-        <div className = "Row">
+    <div className="header-Container">
+        <div className = "header-Row">
             {/* Column1 */}
-            <div className = "column">
-                <div className= "imageCont">
-                    <img className='imageKoopsLogo'src={KoopsLogo} alt="Koops"></img> 
+            <div className = "hd-column">
+                <div className= "hd-imageCont">
+                    <img className='hd-imageKoopsLogo'src={KoopsLogo} alt="Koops"></img> 
                 </div>  
             </div>        
             {/* Column2 */}
-            <div className = "column1">
-                <div className="container2">
-                    <div className = "Login-ButtonContainer">
-                    <button onclick="" className='LogInButton'>Login</button>
+            <div className = "hd-column1">
+                <div className="header-container2">
+                    <div className = "hd-Login-ButtonContainer">
+                    <button onclick="/Login" type="submit" className='hd-LogInButton'><Link to="/Login" className='hd-link'>Login</Link></button>
                     </div> 
             {/* Column3 */}
-                    <div className = "SignUp-ButtonContainer">
-                        <button onclick=""  className='SignUpButton'> SignUp</button>
+                    <div className = "hd-SignUp-ButtonContainer">
+                        <button onclick="/Signup"  className='hd-SignUpButton'> <Link to="/Signup" className='hd-link'>SignUp</Link></button>
                     </div>
                 </div>            
             </div>            

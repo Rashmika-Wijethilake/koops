@@ -1,9 +1,11 @@
 import React from 'react';
 import './RequestDemoBtn.css';
+import { Link } from 'react-router-dom';
+
 function RequestDemoBtn(){
 return(
     <div style={{align:'center'}}>
-    <button href = " " className='button-RequestDemo'> Start Your Journey</button>
+    <Link to='/Login' className='button-RequestDemo'> Start Your Journey</Link>
   </div>
 );
 }

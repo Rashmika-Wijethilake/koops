@@ -18,25 +18,25 @@ const Dashboard = () => {
       };
     return (
         
-        <div className="dashboard">
-
+        <div className="SA-dashboard">
+            
             <div>
-            <img className="koop" src={koop}></img>
+            <img className="SA-Dash-koop" src={koop}></img>
             </div>
 
-            <div className="text">
+            <div className="SA-Dash-text1">
             <h1> Hello Super Admin</h1>
             </div>
        
-            <div className="button-container">
+            <div className="SA-Dash-button-container">
                 <table >
                 <tr>
-                   <td><a  href="#"><button><img src={student}></img><h2>Manage Student</h2></button></a></td>
-                   <td><a  href="#"><button><img className="twel" src={twel}></img><h2>Total Study Groups</h2></button></a></td>
+                   <td><button><img src={student}></img><span><h2>Manage Student</h2></span></button></td>
+                   <td><button><img className="twel" src={twel}></img><span><h2>Total Study Groups</h2></span></button></td>
                 </tr>
                 <tr>
-                   <td><a  href="#"><button><img src={admin}></img><h2>Manage Admin</h2></button></a></td>
-                   <td><a  href="#"><button><img src={material}></img><h2>Add Materials</h2></button></a></td>
+                   <td><button><img src={admin}></img><span><h2>Manage Admin</h2></span></button></td>
+                   <td><button><img src={material}></img><span><h2>Add Materials</h2></span></button></td>
                 </tr>
                 </table>
             </div>

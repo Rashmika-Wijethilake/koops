@@ -10,58 +10,57 @@
 
 }
 
-.menuicon-button{
+.hp-menuicon-button{
     background: none;
     border:none;
     cursor: pointer;
-    margin-left: 720px;
     margin-bottom: 20px;
+    margin-left: 1200px;
         
 }
 
-.menuicon {
+.hp-menuicon {
     width: 50px;
 }
 
-.bot {
+.hp-bot {
     width: 220px;
     display: flex;
     justify-content: center;    
 
 }
 
-.centered-section {
+.hp-centered-section {
     display: flex;
     justify-content: center;
     align-items: center;
    
   }
 
-.inline-table {
+/*.inline-table {
     display: inline-table;
     border-spacing: 8px;
-  }
+  }*/
 
-.text1 {
+.hp-txt1 {
     text-align: center;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
 
-.text2 {
+.hp-txt2 {
     font-size: 35px;
    
 }
 
-.create-icon {
+.hp-create-icon{
     width: 80px;
     margin-left: 460px;
    
 }
 
-
-.addicon-button {
+.hp-addicon-btn {
     background: none;
     border:none;
     cursor: pointer;
@@ -70,7 +69,7 @@
     
 }
 
-.addicon {
+.hp-addicon {
     width: 80px;
     
 }
