@@ -29,7 +29,6 @@ import SuccessfullyDeletedAccount from './Components/SuccessfullyDeletedAccount/
 import Header from './Components/Header/Header';
 
 
-
 function App() {
  
    return (
@@ -44,6 +43,7 @@ function App() {
 
       </Routes>
       </BrowserRouter>
+
     </div>
     
 

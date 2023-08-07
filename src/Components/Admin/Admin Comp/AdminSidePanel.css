@@ -2,15 +2,20 @@
    background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
     display:flex;
     flex-direction: column;
-    max-width:2005px; 
+    width: auto;
+    height: inherit;
+    position: absolute; 
+    left: 80%;
+    transform: translate(-1%);
+    
   } 
   
-  .content-wrap{
-   height:auto;
+  .content-wrap-admin-pan{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-content: flex-start;
+   
     }
 
  .bodyText{

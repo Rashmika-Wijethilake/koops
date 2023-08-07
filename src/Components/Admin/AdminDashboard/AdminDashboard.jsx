@@ -17,12 +17,13 @@ export class AdminDashboard extends Component {
               <div className='Body-Admin'>
                     <div className='AdminSidePanel'>
                     <AdminSidePanel/>
+                    
                     </div>
                       <div className='flex1'>
-                          <div className='StudentDetails'>
+                          {/* <div className='StudentDetails'> */}
                               <UpdateBtn/>
                               <RemoveBtn/>
-                          </div>
+                          {/* </div> */}
                         
                     </div>
               </div>
