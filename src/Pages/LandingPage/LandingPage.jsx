@@ -8,11 +8,8 @@ import './LandingPage.css'
 
 export default function LandingPage() {
     return (
-<<<<<<< HEAD
-      <div className ="lp-page-container" >
-=======
+
       <div className ="page-container-LP" >
->>>>>>> 4e2ff7fcad582dba659c0a5d83e7a1987b3ae123
         <Header/>
             <div className = "content-wrap-LP">
                 <div className = "bodyText-LP">

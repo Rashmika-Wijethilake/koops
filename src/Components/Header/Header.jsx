@@ -8,16 +8,8 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () =>{
-<<<<<<< HEAD
 
     const navigate = useNavigate();
-
-=======
-    const navigate = useNavigate();
-
-    // const [activePage, setActivePage] = useState("LandingPage")
-
->>>>>>> 4e2ff7fcad582dba659c0a5d83e7a1987b3ae123
       return(        
 
     <div className="header-Container">
