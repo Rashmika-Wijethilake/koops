@@ -8,7 +8,7 @@ import './LandingPage.css'
 
 export default function LandingPage() {
     return (
-      <div className ="page-container" >
+      <div className ="page-container-LP" >
         <Header/>
             <div className = "content-wrap-LP">
                 <div className = "bodyText-LP">
