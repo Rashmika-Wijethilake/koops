@@ -2,11 +2,10 @@ import React from "react";
 import Footer from "../../Components/Footer/Footer";
 import bot from './../../Assests/chatbot.png';
 import './homepage.css'
-import KoopsLogo from './../../Assests/Koops-icon3.png';
-import Menuicon from './../../Assests/MenuIcon.png'
 import createicon from './../../Assests/createicon.png' 
 import addIcon from './../../Assests/addIcon.png'
 import { useLocation } from "react-router-dom";
+import Navbar from "../../Components/ProfileNavbar/Navbar";
 
 
 export default function Homepage () {
@@ -17,16 +16,8 @@ export default function Homepage () {
         <div className="homepage-container">
 
             <div>
-                <table>
-                    <tr>
-                        <td>
-                        <img className='imageKoopsLogo'src={KoopsLogo} alt="Koops"></img>
-                        </td>
-                        <td>
-                        <button className="hp-menuicon-button"><img className="hp-menuicon" src={Menuicon}></img></button>
-                        </td>
-                    </tr>
-                </table>
+                <Navbar/>
+
             </div>
 
             <div className="hp-centered-section">
@@ -34,7 +25,10 @@ export default function Homepage () {
             </div>
 
             <div className="hp-centered-section">
-                <h1  className="hp-txt1"> {location.state.id} Welcome To KOOPS</h1> 
+            <h1 className="hp-txt1">
+                {location.state && location.state.id ? `${location.state.id} Welcome To KOOPS` : "Welcome To KOOPS"}
+            </h1>
+
             </div>
             
             <div >

@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
+import Footer from '../../Components/Footer/Footer';
 import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
-import HeaderWithoutBtns from '../Header/HeaderWithoutBtns';
-import DoneBtn from '../Buttons/DoneBtn';
-import '../SuccessfullyDeletedAccount/SuccessfullyDeletedAccount.css'
+import HeaderWithoutBtns from '../../Components/Header/HeaderWithoutBtns';
+import DoneBtn from '../../Components/Buttons/DoneBtn';
+import './SuccessfullyDeletedAccount.css'
 
 
 export default function SuccessfullyDeletedAccount() {

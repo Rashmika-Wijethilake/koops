@@ -1,0 +1,79 @@
+.container-editprofile {
+    margin: auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    width: 700px;
+    height: 800px;
+    position: relative;
+    background-color: #2D9DD7;
+    border-radius: 55px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .infor_holder{
+    position: relative;
+    width: 40%;
+     margin-top: 50px;
+     margin-left: 50px;
+     margin-bottom: 50px;
+     display: flex;
+     justify-content: flex-start;
+  }
+
+   .infor_holder img{
+    position: relative;
+    margin-top: 40px;  
+  }
+
+  .info-hold-text{
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .infor_holder h1{
+    color: white;  
+  }
+
+  .infor_holder h3{
+    color: white;
+  }
+  
+  .formstudent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+  }
+  
+  .formstudent label {
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+  }
+
+
+  .formstudent input{
+    display: inline;
+    margin-left: 50px;
+    float: right;
+    border-radius: 20px;
+    width: 60%;
+    height: 25px;
+    border: none;
+    
+     
+  }
+
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+  
+  }
+ 
+  
+  
+  

@@ -3,26 +3,6 @@
 
   }
   
-.imageKoopsLogo{
-    justify-content: center;
-    height:100 px;
-    width:200px;
-
-}
-
-.hp-menuicon-button{
-    background: none;
-    border:none;
-    cursor: pointer;
-    margin-bottom: 20px;
-    margin-left: 1200px;
-        
-}
-
-.hp-menuicon {
-    width: 50px;
-}
-
 .hp-bot {
     width: 220px;
     display: flex;

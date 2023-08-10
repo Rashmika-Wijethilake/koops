@@ -57,10 +57,11 @@ export const Signup = () => {
   };
 
   return (
-    <div className="signup-form-container">
+    <div>
       <div className="signup-Header">
         <Header />
       </div>
+      <div className="signup-form-container">
       <div className="sinup-Form">
         <table>
           <tr>
@@ -115,7 +116,7 @@ export const Signup = () => {
                 <input
                   value={comfirm_password}
                   onChange={(e) => setComPass(e.target.value)}
-                  type="comfirm_password"
+                  type="password"
                   placeholder="********"
                   id="comfirm_password"
                   name="comfirm_password"
@@ -125,12 +126,13 @@ export const Signup = () => {
                 </button>
 
                 <tr>
-                  <button className="signup-txt">
+                  <div className="signup-txt">
                     Already have an Account.
-                  </button>
-                  <Link to="/Login" className="signup-btn-link">
+                    <Link to="/Login" className="signup-btn-link">
                     Login
                   </Link>
+                  </div>
+                  
                 </tr>
               </form>
             </td>
@@ -139,6 +141,7 @@ export const Signup = () => {
             </td>
           </tr>
         </table>
+      </div>
       </div>
       <div>
         <Footer />

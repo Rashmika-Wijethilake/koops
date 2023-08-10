@@ -47,11 +47,11 @@ export const Login = () => {
     
     return(
         
-        <div className="form-container">
+        <div>
             <div className="Header">
             <HeaderWithoutBtns/>
             </div>
-
+            <div className="lg-form-container">
             <div className="lg-Form">
             <table>
                 <tr>
@@ -75,6 +75,7 @@ export const Login = () => {
                     </td>
                 </tr>
             </table>
+            </div>
             </div>
             <div>
                 <Footer/>
