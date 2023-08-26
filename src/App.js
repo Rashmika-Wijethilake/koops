@@ -44,6 +44,7 @@ function App() {
         <Route path="/Editprofile" Component={Editprofile}/>
         <Route path="/Accountdelete" Component={Accountdelete}/>
         <Route path="/SignOut" Component={SignOut}/>
+        <Route path='Forgotpassword' Component={ForgotPassword}/>
                
 
       </Routes>
