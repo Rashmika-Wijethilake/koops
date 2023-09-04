@@ -4,14 +4,14 @@ import bot from './../../Assests/chatbot.png';
 import './homepage.css'
 import createicon from './../../Assests/createicon.png' 
 import addIcon from './../../Assests/addIcon.png'
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Navbar from "../../Components/ProfileNavbar/Navbar";
 
 
 export default function Homepage () {
 
     const location=useLocation()
-
+  
     return(
         <div className="homepage-container">
 
@@ -37,7 +37,7 @@ export default function Homepage () {
             </div>
 
             <div className="hp-centered-section">
-                <button className="hp-addicon-btn" ><img className="hp-addicon" src={addIcon}></img></button>
+                <Link to='/CreateStudyGroup' className="hp-addicon-btn" ><img className="hp-addicon" src={addIcon}></img></Link>
             </div>
 
             <div>

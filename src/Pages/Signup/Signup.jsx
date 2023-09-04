@@ -13,7 +13,7 @@ export const Signup = () => {
 
   const [name, setName] = useState("");
   const [studentid, setStId] = useState("");
-  const [username, setUsername] = useState("");
+  // const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [comfirm_password, setComPass] = useState("");
@@ -25,7 +25,7 @@ export const Signup = () => {
         axios.post("http://localhost:3001/Signup", {
         name,
         studentid,
-        username,
+        // username,
         email,
         password,
         comfirm_password,
@@ -85,7 +85,7 @@ export const Signup = () => {
                   id="studentid"
                   name="studentid"
                 />
-                <label htmlFor="username">User name</label>
+                {/* <label htmlFor="username">User name</label>
                 <input
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
@@ -93,7 +93,7 @@ export const Signup = () => {
                   placeholder="username"
                   id="username"
                   name="username"
-                />
+                /> */}
                 <label htmlFor="email">Email Address</label>
                 <input
                   value={email}

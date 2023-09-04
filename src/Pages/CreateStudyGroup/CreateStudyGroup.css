@@ -1,0 +1,161 @@
+  .csg-mainContainer{
+    width: 793px;
+    height: 894px;
+    background-color: #3069C4;
+    border-radius: 55px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 44px;
+  }
+
+  .csg-uppperDiv{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+  }
+
+  .search{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 93px;
+    left: 335px;
+    color: black;
+   }
+
+.koopnew {
+  position: absolute;
+  top: -18px;
+  right: 496px;
+  width: 165px;
+  height: 108px;
+z-index: 10;
+}
+
+.div-csg-heading {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.csg-mainheading{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.csg-closeing{
+  position: absolute;
+  top: 10px; /* Adjust the top distance as needed */
+  right: 30px; /* Adjust the right distance as needed */
+  width: 40px;
+  height: 40px;
+ }
+
+ .csg-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+ .csg-form label{
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .csg-form input{
+  position: relative;
+  display: inline-block;
+  width: 512px;
+  height: 30px;
+  top: 0px;
+  left: 27px;
+  border: none;
+  background-color: #FFFFFF;
+  opacity: 37%;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+ 
+}
+ .csg-form ul{
+   align-items: center;
+   margin-top: 10px;
+   
+
+   
+ }
+
+ .AM-button{
+  display: flex;
+  border-radius: 50px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 50px; /* Add rounded corners if desired */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth color transition */
+}
+
+/* Add this CSS to your CreateStudyGroup.css file or in a separate CSS file */
+.container-admember {
+  list-style-type: none; /* Remove dots */
+  padding-left: 0; /* Remove default padding */
+  background-color: #FFFFFF;
+  width: 100vh;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container-admember h3 {
+  font-size: 24px; /* Adjust font size for group name */
+  margin-bottom: 10px; /* Add some spacing between group name and member details */
+}
+
+.container-admember ul {
+  padding-left: 0; /* Remove default padding for the list */
+}
+
+.container-admember li {
+  font-size: 18px; /* Adjust font size for member details */
+  margin-bottom: 5px;
+  list-style-type: none; /* Add spacing between members */
+}
+
+
+  .creatButton{
+  
+   position: relative;
+    top: 46px;
+    width: 159.69px;
+    height: 53px;
+    margin-top: 20px;
+    background-color: #2AA7DC;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;  
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+
+

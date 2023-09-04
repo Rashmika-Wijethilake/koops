@@ -4,46 +4,46 @@ import womanImage from './../../Assests/woman.png';
 import SaveBtn from '../../Components/Buttons/SaveBtn';
 import CancelBtn from '../../Components/Buttons/CancelBtn';
 import './editprofile.css'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
 
 export default function Editprofile() {
 
-    const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    studentId: "",
-    username: "",
-    password: "",
-    confirm_password: ""
+  const location=useLocation()
+
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  studentId: "",
+  username: "",
+  password: "",
+  confirm_password: "",
 });
 
 const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-        ...prevState,
-        [name]: value
-    }));
+  const { name, value } = e.target;
+  setFormData((prevState) => ({
+    ...prevState,
+    [name]: value,
+  }));
 };
 
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.post('http://localhost:3001/Editprofile', formData);
-    if (response.data === "success") {
-      alert("user details updated")
-      
-      window.location.href = "/Homepage";
+    const response = await axios.put('/profile/:id', formData);
+    if (response.status === 200) {
+      alert("User details updated");
+      // You can redirect the user or perform any other action upon successful update
     } else {
-      console.error("Response data is not 'success'");
+      console.error("Response status is not 200");
     }
   } catch (error) {
     console.error("Error during request:", error);
   }
 };
-
 
 
     return (
@@ -60,10 +60,10 @@ const handleSubmit = async (e) => {
                 </div>
               </div>
          
-            <form className="formstudent">
-              
+            <form className="formstudent"  action="POST">
+
               <label htmlFor="name">Name              
-                <input type="text" id="name" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} required className='inputs'/>
+                <input type="text" id="name" name="name" placeholder="Enter your name" value={`${location.state.name}`} onChange={handleChange} required className='inputs'/>
               </label>
     
               <label htmlFor="email">Email
@@ -74,9 +74,9 @@ const handleSubmit = async (e) => {
                 <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" value={formData.studentId} onChange={handleChange} required className='inputs' />
               </label>
     
-              <label htmlFor="username">User name
+              {/* <label htmlFor="username">User name
                 <input type="text" id="username" name="username" placeholder="Enter your username" value={formData.username} onChange={handleChange} required className='inputs' />
-              </label>
+              </label> */}
     
               <label htmlFor="password">Password
                 <input type="password" id="username" name="password" placeholder="Enter your password" value={formData.password} onChange={handleChange} required className='inputs' />
@@ -88,11 +88,9 @@ const handleSubmit = async (e) => {
     
               <div className="buttons">
                 <SaveBtn onClick={handleSubmit}/>
-                <Link to="/Homepage" ><CancelBtn/></Link>
-
-                
-
+                <Link to="/Homepage" ><CancelBtn/></Link>             
               </div>
+              
             </form>
           </div>
          

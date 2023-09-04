@@ -1,14 +1,8 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://127.0.0.1:27017/Student")
-.then(() => {
-    console.log(`mongodb connected`);
-})
 
-.catch(() => {
-    console.log(`failed`)
-})
-
+// create login and signup database
 const studentSchema = new mongoose.Schema({
+
     name: {
         type: String,
         required:true
@@ -17,10 +11,10 @@ const studentSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    username: {
-        type: String,
-        required:true
-    },
+    // username: {
+    //     type: String,
+    //     required:true
+    // },
     email: {
         type: String,
         required:true
@@ -32,9 +26,21 @@ const studentSchema = new mongoose.Schema({
     comfirm_password: {
         type: String,
         required:true
-    }
+    },
 
-})
+//To connect students with their study groups.an array of group references
+    groups: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'studyGroup',
+      },   
+]
+        
+});
 
 const studentModel = mongoose.model("studentLogin", studentSchema )
 module.exports = studentModel
+
+
+
+
+  

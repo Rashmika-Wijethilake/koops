@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import LogInBtn from '../Buttons/LogInBtn';
+import Footer from '../../Components/Footer/Footer';
+import LogInBtn from '../../Components/Buttons/LogInBtn';
 import KoopsWithShadow from './../../Assests/KoopsWithShadow.png'
-import HeaderWithoutBtns from '../Header/HeaderWithoutBtns';
+import HeaderWithoutBtns from '../../Components/Header/HeaderWithoutBtns';
 import './AccountVerified.css'
 
 export default function AccountVerified() {

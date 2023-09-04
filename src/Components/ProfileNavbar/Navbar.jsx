@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import KoopsLogo from './../../Assests/Koops-icon3.png';
 import student from './../../Assests/student.png'
 import "./navbar.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 
 export const Navbar = () => {
@@ -71,39 +71,3 @@ export const Navbar = () => {
 
 export default Navbar
 
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// import student from './../../Assests/student.png'
-// import './navbar.css'
-// import KoopsLogo from './../../Assests/Koops-icon3.png';
-// import Menuicon from './../../Assests/MenuIcon.png'
-
-// export const navbar = ()  => {
-//   return (
-
-//     <nav className="navbar-hp">          
-//         <img className='imageKoopsLogo'src={KoopsLogo} alt="Koops"></img>
-
-//         <img className="hp-menuicon" src={Menuicon} alt="logo"></img>
-     
-   
-//           <ul>
-//             <li><img src={student}></img></li>
-//             <li><h1>username</h1></li>
-//             <li><h1>studentID</h1></li>
-//             <li><Link to>Edit Profile</Link></li>
-//             <li><Link to>Delete Account</Link></li>
-//             <li><Link to>Sign out</Link></li>
-//           </ul>
-
-          
-//     </nav>
-    
-    
-    
-    
-    
-//   )
-// }
-
-// export default navbar
