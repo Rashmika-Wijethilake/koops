@@ -1,7 +1,8 @@
 import React from "react";
 import "./StudentDetailsUpdatedAdmin.css"
 import AdminSidePanel from "../Admin Comp/AdminSidePanel";
-export default function StudentDetailsUpBox() {
+import StudentDetailsUpBox from "./StudentDetailsUpBox";
+export default function StudentDetailsUpdatedAdmin() {
     return (
 
       <div className ="StudentDetailsUpdated">

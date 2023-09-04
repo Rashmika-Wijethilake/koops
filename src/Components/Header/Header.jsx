@@ -8,10 +8,15 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () =>{
+<<<<<<< HEAD
 
 
     const navigate = useNavigate();
 
+=======
+
+    const navigate = useNavigate();
+>>>>>>> 9c6da86553a20e104867db89e18b413acfaffbbe
       return(        
 
     <div className="header-Container">
