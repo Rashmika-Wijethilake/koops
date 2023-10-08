@@ -39,15 +39,13 @@ function App() {
         <Route path="/Editprofile" Component={Editprofile}/>
         <Route path="/Accountdelete" Component={Accountdelete}/>
         <Route path="/SignOut" Component={SignOut}/>
-<<<<<<< HEAD
+
         <Route path="/CreateStudyGroup" Component={CreateStudyGroup}/>
         <Route path="/StudyGroupEdit" Component={StudyGroupEdit}/>
         <Route path="/Studygroups" Component={Studygroups}/>       
-                 
-=======
-        <Route path='Forgotpassword' Component={ForgotPassword}/>
+
+        {/* <Route path='Forgotpassword' Component={ForgotPassword}/> */}
                
->>>>>>> 9c6da86553a20e104867db89e18b413acfaffbbe
 
       </Routes>
       </BrowserRouter>
