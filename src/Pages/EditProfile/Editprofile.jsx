@@ -1,49 +1,64 @@
 import React from "react";
 import Footer from '../../Components/Footer/Footer';
 import womanImage from './../../Assests/woman.png';
-import SaveBtn from '../../Components/Buttons/SaveBtn';
 import CancelBtn from '../../Components/Buttons/CancelBtn';
 import './editprofile.css'
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
-import { useState } from "react";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 
 export default function Editprofile() {
 
-  const location=useLocation()
+  const [emailToEdit, setEmailToEdit] = useState('');
+  const [name, setName] = useState('');
+  const [studentid, setStudentId] = useState('');
+  const [password, setPassword] = useState('');
+  const [comfirm_password, setComfirmPassword] = useState('');
+  const [message, setMessage] = useState('');
+  // const { id } = useParams();
 
-const [formData, setFormData] = useState({
-  name: "",
-  email: "",
-  studentId: "",
-  username: "",
-  password: "",
-  confirm_password: "",
-});
-
-const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prevState) => ({
-    ...prevState,
-    [name]: value,
-  }));
-};
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  try {
-    const response = await axios.put('/profile/:id', formData);
-    if (response.status === 200) {
-      alert("User details updated");
-      // You can redirect the user or perform any other action upon successful update
-    } else {
-      console.error("Response status is not 200");
-    }
-  } catch (error) {
-    console.error("Error during request:", error);
-  }
-};
+  // useEffect(() => {
+  //   // Fetch user data based on the 'id' from your API or user session
+  //   // and set the initial state with the fetched data
+  //   axios.get(`http://localhost:3001/get-user/${id}`)
+  //     .then((response) => {
+  //       const userData = response.data; // Assuming your API returns user data as an object
+  //       setName(userData.name);
+  //       setEmailToEdit(userData.email);
+  //       setStudentId(userData.studentid);
+  //       // Set other fields as needed
+  //     })
+  //     .catch((error) => {
+  //       console.error('Failed to fetch user data:', error);
+  //     });
+  // }, [id]);
+  const handleEditUser = () => {
+    console.log('Updating user data:', { name, studentid, password, comfirm_password }); // Check the data being sent
+  
+    axios
+      .put(`http://localhost:3001/edit-user/${emailToEdit}`, {
+        name,
+        studentid,
+        password,
+        comfirm_password,
+      })
+      .then((response) => {
+        console.log('Response from backend:', response.data); // Check the response from the backend
+  
+        if (response.status === 200) {
+          setMessage(response.data.message);
+        } else {
+          setMessage('User data update failed.');
+        }
+      })
+      .catch((error) => {
+        console.error('Error during user data update:', error);
+        setMessage('User data update failed.');
+      });
+  };
+  
 
 
     return (
@@ -55,23 +70,24 @@ const handleSubmit = async (e) => {
                 </div>
               
                 <div className="info-hold-text">
-                  <h1>User name</h1>
-                  <h3>Student ID</h3>
+                  <h1>{name}</h1>
+                  <h3>{studentid}</h3>
                 </div>
               </div>
          
             <form className="formstudent"  action="POST">
+    
 
               <label htmlFor="name">Name              
-                <input type="text" id="name" name="name" placeholder="Enter your name" value={`${location.state.name}`} onChange={handleChange} required className='inputs'/>
+                <input type="text" id="name" name="name" placeholder="Enter your name " value={name} onChange={(e) => setName(e.target.value)} required className='inputs'/>
               </label>
     
               <label htmlFor="email">Email
-                <input type="email" id="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required  className='inputs'/>
+                <input type="email" id="email" name="email" placeholder="Enter your email" value={emailToEdit} onChange={(e) => setEmailToEdit(e.target.value)} required  className='inputs'/>
               </label>
         
               <label htmlFor="studentId">Student ID
-                <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" value={formData.studentId} onChange={handleChange} required className='inputs' />
+                <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" value={studentid} onChange={(e) => setStudentId(e.target.value)} required className='inputs' />
               </label>
     
               {/* <label htmlFor="username">User name
@@ -79,17 +95,18 @@ const handleSubmit = async (e) => {
               </label> */}
     
               <label htmlFor="password">Password
-                <input type="password" id="username" name="password" placeholder="Enter your password" value={formData.password} onChange={handleChange} required className='inputs' />
+                <input type="password" id="username" name="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)}  required className='inputs' />
               </label>
                 
               <label htmlFor="password">Confirm password
-                <input type="password" id="username" name="confirm_password" placeholder="Confirm your password" value={formData.confirm_password} onChange={handleChange} required className='inputs' />
+                <input type="password" id="username" name="confirm_password" placeholder="Confirm your password" value={comfirm_password} onChange={(e) => setComfirmPassword(e.target.value)} required className='inputs' />
               </label>
     
               <div className="buttons">
-                <SaveBtn onClick={handleSubmit}/>
-                <Link to="/Homepage" ><CancelBtn/></Link>             
+                <button onClick={handleEditUser} className="edit-btn">Save</button>
+                <Link to="/Homepage"><CancelBtn /></Link>
               </div>
+
               
             </form>
           </div>

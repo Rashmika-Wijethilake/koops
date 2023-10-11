@@ -1,4 +1,4 @@
-.content-wrap-Dl{
+.content-wrap-Dl2{
     /* flex:5; */
    background: linear-gradient(to right, #88E7FF,#2DA2D8, #1549ba);
    border-top-left-radius: 50px;
@@ -10,11 +10,11 @@
    align-items: center;
    }
 
-.Container-dl{
+.Container-dl2{
     margin-bottom: 200px;
  }
 
-.delete-content{
+.delete-content2{
     background-color: rgb(209, 215, 230);
     display: flex;
     height: auto;
@@ -27,43 +27,34 @@
     justify-content: center;
 }
 
-.delete-content p{
+.delete-content2 p{
     margin-top: 30px;
     font-size: 20px;
 }
 
-
-.button-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px 10px 10px;
-    gap: 30px;
+.delete-content2 input{
+    border: none;
+    padding: 5px 5px;
+    width: 250px;
+    margin-bottom: 50px;
+    border-radius: 15px;
 
 }
 
-.DL-YES {
+.DL-btn {
     display: block;
     text-decoration: none;
-    background-color: #d81d26;
+    background-color: #0c0cc1;
     color: white;
     padding: 0.5rem;
-    margin: 0 0.3rem;
+    margin: 0 0.5rem;
     border-radius: 0.5rem;
     list-style: none;
     width: 100px;
     text-align: center;
 }
 
-.DL-NO {
-    display: block;
-    text-decoration: none;
-    background-color: #0ce113;
-    color: white;
-    padding: 0.5rem;
-    margin: 0 0.3rem;
-    border-radius: 0.5rem;
+
+.D-btn {
     list-style: none;
-    width: 100px;
-    text-align: center;
 }

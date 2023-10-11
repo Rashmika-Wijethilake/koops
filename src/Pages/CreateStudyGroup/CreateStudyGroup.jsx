@@ -4,24 +4,14 @@ import cancelButton from './../../Assests/cancel.png';
 import groupdAdd from './../../Assests/addToGroup.png';
 import koopnew from './../../Assests/koopnew.png';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function CreateStudyGroup() {
   const [groupName, setGroupName] = useState('');
   const [memberData, setMemberData] = useState({ email: '' });
+  const [groupMembers, setGroupMembers] = useState('');
   const [groups, setGroups] = useState([]);
   const navigate = useNavigate();
-
-  // Function to create a group and redirect to the StudyGroup page
-  const handleCreateGroup = async () => {
-    try {
-      // Send a POST request to create the group on the server
-      await axios.post('/api/groups', { groups }); // Send the array of groups
-      navigate('/Studygroups'); // Navigate to the StudyGroup page
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   const handleAddMember = () => {
     if (groupName.trim() !== '' && memberData.email.trim() !== '') {
@@ -38,6 +28,26 @@ function CreateStudyGroup() {
     }
   };
 
+  // Function to create a group and redirect to the StudyGroup page
+ 
+  const createGroup = () => {
+    // Implement logic to create a group
+    const newGroup = {
+      id: Date.now(),
+      name: groupName,
+      members: groupMembers.split(',').map(member => member.trim()),
+    };
+    saveGroupToLocalStorage(newGroup);
+  };
+  
+  const saveGroupToLocalStorage = (group) => {
+    const existingGroups = JSON.parse(localStorage.getItem('groups')) || [];
+    existingGroups.push(group);
+    localStorage.setItem('groups', JSON.stringify(existingGroups));
+  };
+
+ 
+
   return (
     <div className="csg-mainContainer">
       <div className='csg-uppperDiv'>
@@ -50,7 +60,7 @@ function CreateStudyGroup() {
         </div>
 
         <div>
-          <img src={cancelButton} className='csg-closeing' alt="Close" />
+          <Link to='/Homepage'><img src={cancelButton} className='csg-closeing' alt="Close" /></Link>
         </div>
       </div>
 
@@ -59,34 +69,49 @@ function CreateStudyGroup() {
           <input type="text" value={groupName} onChange={(e) => setGroupName(e.target.value)} />
         </label>
 
-        <label>
-        Add Members: <input type="text" value={memberData.email} placeholder="Email" onChange={(e) => setMemberData({ ...memberData, email: e.target.value })} />
-        </label>
+        {/* <label>
+        Add Members: <input type="text" value={memberData.email} placeholder="Student Id" onChange={(e) => setMemberData({ ...memberData, email: e.target.value })} />
+        </label> */}
 
-        <button type="button" onClick={handleAddMember} className="AM-button">
+        {/* <button type="button" onClick={handleAddMember} className="AM-button">
           Add Member
-        </button>
+        </button> */}
 
         <div className='container-admember'>
           {groups.map((group, index) => (
             <div key={index}>
-              <h3>Group Name: {group.groupName}</h3>
-              <ul>
+              <h3 >Group Name: {group.groupName}</h3>
+              <tr>
                 {group.members.map((member, memberIndex) => (
-                  <li key={memberIndex}>
+                  <tr key={memberIndex}className='gpname'>
                     <strong>Email:</strong> {member.email}
-                  </li>
+                  </tr>
                 ))}
-              </ul>
+              </tr>
             </div>
           ))}
         </div>
 
         <div>
-          <button className='creatButton' onClick={handleCreateGroup}>Create</button>
+        <Link to="/Studygroups" className='creatButton' onClick={createGroup}>Create Group</Link>   
         </div>
 
       </form>
+
+      {/* <div>
+      <input
+        type="text"
+        placeholder="Group Name"
+        value={groupName}
+        onChange={(e) => setGroupName(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Members (comma-separated)"
+        value={groupMembers}
+        onChange={(e) => setGroupMembers(e.target.value)}
+      />
+    </div> */}
     </div>
   );
 }

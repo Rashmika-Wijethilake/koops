@@ -4,6 +4,7 @@ import KoopsWithShadow from './../../Assests/KoopsWithShadow.png';
 import HeaderWithoutBtns from '../../Components/Header/HeaderWithoutBtns';
 import DoneBtn from '../../Components/Buttons/DoneBtn';
 import './SuccessfullyDeletedAccount.css'
+import { Link } from "react-router-dom";
 
 
 export default function SuccessfullyDeletedAccount() {
@@ -18,8 +19,8 @@ export default function SuccessfullyDeletedAccount() {
                 <div className='TextContainer'>
                 <h1 className='heading2'> Successfully Deleted Account </h1>
                 </div>
-              <emailprops email= "example@gmail.com"/>
-             <DoneBtn/>
+                
+                <Link to='/LandingPage'><DoneBtn/> </Link>
                   </div>  
             </div>
             <div className='footer'>

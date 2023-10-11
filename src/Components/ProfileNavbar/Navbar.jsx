@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,  useEffect } from "react";
 import KoopsLogo from './../../Assests/Koops-icon3.png';
 import student from './../../Assests/student.png'
 import "./navbar.css";
@@ -7,32 +7,6 @@ import axios from "axios";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  
-
-  const handleDeleteAccount = async () => {
-    try {
-      const userEmail = localStorage.getItem("userEmail"); // Retrieve the user's email from localStorage
-      if (!userEmail) {
-        console.error("User email not found in localStorage.");
-        return;
-      }
-
-      const response = await axios.delete('http://localhost:3001/DeleteAccount', {
-        data: {
-          email: userEmail
-        }
-      });
-      if (response.data === "success") {
-        alert("User account deleted successfully.");
-        // You can handle further actions like logging the user out or redirecting to a different page
-      } else {
-        console.error("Response data is not 'success'");
-      }
-    } catch (error) {
-      console.error("Error during request:", error);
-    }
-  };
 
 
   return (
@@ -53,7 +27,7 @@ export const Navbar = () => {
           <NavLink to="/Editprofile">Edit Profile</NavLink>
         </li>
         <li>
-          <NavLink to="/Landingpage" onClick={handleDeleteAccount}>Delete Account</NavLink>
+          <NavLink to="/Accountdelete">Delete Account</NavLink>
         </li>
         <li>
           <NavLink to="/SignOut">Sign out</NavLink>
@@ -61,8 +35,7 @@ export const Navbar = () => {
         <li>
         <img className='hp-imageKoopsLogo'src={KoopsLogo} alt="Koops"></img>
         </li>
-
-      
+  
       </ul>
       
     </nav>

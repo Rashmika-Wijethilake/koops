@@ -8,6 +8,7 @@ app.use(cors());
 
 const mongoose = require('mongoose')
 mongoose.connect("mongodb://127.0.0.1:27017/Student")
+
 .then(() => {
     console.log(`mongodb connected`);
 })
@@ -17,7 +18,6 @@ mongoose.connect("mongodb://127.0.0.1:27017/Student")
 })
 
 const studentModel = require('./models/student'); // Import your student model
-const groupModel = require('./models/group'); // Import your group model
 
 //login
 
@@ -73,40 +73,57 @@ app.post('/Signup', async(req, res) => {
 });
 
 
-// Update profile route (based on _id)
-// app.put('/profile/:id', async (req, res) => {
-//     const { id } = req.params; // Get the user ID from the URL
-//     const { name, studentid, email, password } = req.body; // Get updated data from the request body
-  
-//     try {
-//       // Find the user by ID in the database
-//       const user = await studentModel.findById(id);
-  
-//       if (!user) {
-//         return res.status(404).json({ error: 'Profile not found' });
-//       }
-  
-//       // Update user data
-//       user.name = name;
-//       user.studentid = studentid;
-//       user.email = email;
-//       user.password = password;
-  
-//     //   // Hash the updated password if provided
-//     //   if (password) {
-//     //     const hashedPassword = await bcrypt.hash(password, 10);
-//     //     user.password = hashedPassword;
-//     //   }
-  
-//       // Save the updated user document
-//       await user.save();
-  
-//       res.status(200).json({ message: 'Profile updated successfully' });
-//     } catch (error) {
-//       console.error(error);
-//       res.status(500).json({ error: 'Internal server error' });
-//     }
-//   });
+// DELETE account route
+app.delete('/delete-account/:email', async (req, res) => {
+  const emailToDelete = req.params.email;
+
+  try {
+    // Attempt to find the user by their email and delete their account
+    const deletedUser = await studentModel.findOneAndRemove({ email: emailToDelete });
+
+    if (!deletedUser) {
+      // If the user with the given email doesn't exist, return an error message
+      return res.status(404).json({ message: 'User not found.' });
+    }
+
+    // If the user's account was successfully deleted, return a success message
+    return res.json({ message: 'Account deleted successfully.' });
+  } catch (error) {
+    // If an error occurred during the deletion process, return an error response
+    console.error(`Account deletion failed: ${error}`);
+    return res.status(500).json({ message: 'Server error.' });
+  }
+});
+
+
+//edit profile
+
+app.put('/edit-user/:email', async (req, res) => {
+  const emailToEdit = req.params.email;
+  const { name, studentid, password, comfirm_password } = req.body;
+
+  try {
+    // Attempt to find the user by their email and update their data
+    const updatedUser = await studentModel.findOneAndUpdate(
+      { email: emailToEdit },
+      { name, studentid, password, comfirm_password },
+      { new: true } // Return the updated user data
+    );
+
+    if (!updatedUser) {
+      // If the user with the given email doesn't exist, return an error message
+      return res.status(404).json({ message: 'User not found.' });
+    }
+
+    // If the user's data was successfully updated, return the updated user
+    return res.json({ message: 'User data updated successfully.', user: updatedUser });
+  } catch (error) {
+    // If an error occurred during the update process, return an error response
+    console.error(`User data update failed: ${error}`);
+    return res.status(500).json({ message: 'Server error.' });
+  }
+});
+
 
 // Define a GET endpoint to fetch groups
 app.get('/api/groups', async (req, res) => {
@@ -156,9 +173,11 @@ app.get('/api/groups', async (req, res) => {
 
   
 
-app.listen(3001,() => {
+app.listen(3001, () => {
     console.log('server is running');
 })
+
+
 
 
   

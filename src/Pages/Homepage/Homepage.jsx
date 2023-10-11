@@ -17,7 +17,6 @@ export default function Homepage () {
 
             <div>
                 <Navbar/>
-
             </div>
 
             <div className="hp-centered-section">

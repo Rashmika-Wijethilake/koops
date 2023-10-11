@@ -1,0 +1,41 @@
+/* JoinRoom.css */
+
+/* Center the entire content vertically and horizontally */
+.j-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the container take up the full viewport height */
+    background-color: rgb(211, 221, 234); /* Set the blue background color */
+  }
+  
+  /* Style for the header */
+  .j-container h2 {
+    color: rgb(0, 0, 0); /* Set the text color to white */
+  }
+  
+  /* Style for the input field */
+  .j-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+  /* Style for the button */
+  .j-container button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Add hover effect to the button */
+  .j-container button:hover {
+    background-color: darkblue;
+  }
+  

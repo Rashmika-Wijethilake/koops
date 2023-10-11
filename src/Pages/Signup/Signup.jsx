@@ -75,6 +75,7 @@ export const Signup = () => {
                   placeholder="Enter your name"
                   id="name"
                   name="name"
+                  
                 />
                 <label htmlFor="studentid">Student ID</label>
                 <input

@@ -28,12 +28,6 @@ const studentSchema = new mongoose.Schema({
         required:true
     },
 
-//To connect students with their study groups.an array of group references
-    groups: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'studyGroup',
-      },   
-]
         
 });
 

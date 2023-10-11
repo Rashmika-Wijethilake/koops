@@ -7,9 +7,11 @@ import Navbar from "../../Components/ProfileNavbar/Navbar";
 import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import deleteButton from './../../Assests/delete.png';
+import menuvertical from './../../Assests/menuvertical.png'
 export default function Studygroups() {
   const [groups, setGroups] = useState([]);
+  const savedGroups = JSON.parse(localStorage.getItem('groups')) || [];
 
   // Function to fetch study groups from the server
   const fetchGroups = async () => {
@@ -28,19 +30,55 @@ export default function Studygroups() {
 
   const location = useLocation();
 
+
+  const deleteGroup = (group) => {
+    // Find the index of the group in savedGroups
+    const groupIndex = savedGroups.findIndex((g) => g.id === group.id);
+
+    // If found, remove the group from savedGroups
+    if (groupIndex !== -1) {
+      savedGroups.splice(groupIndex, 1);
+
+      // Update localStorage with the modified savedGroups
+      localStorage.setItem('groups', JSON.stringify(savedGroups));
+
+      // Force a re-render by setting groups state with the modified data
+      setGroups([...savedGroups]);
+    }
+  };
+
+    // Function to clear local storage data
+    const clearLocalStorageData = () => {
+      localStorage.clear();
+    }
+
   return (
     <div className="sg-page-container">
       <Navbar />
       <div>
         <div className="sg-texts">
-          <h1>Hello {location.state && location.state.id ? `${location.state.id} Welcome To KOOPS` : "Welcome To KOOPS"}</h1>
           <h1>My Study Groups</h1>
         </div>
 
         <div className="sg-mid">
-          <div className="style-group">
-            <img src={GroupIcon} alt="Koops" />
-            <h2>ExampleGroup</h2>
+          <div>
+            {/* <img src={GroupIcon} alt="Koops" /> */}
+            <div>          
+              <table className="grptable">
+                {savedGroups.map((group) => (
+
+                  <td key={group.id} className="tdprop">
+                   <div>
+                   <Link to="/JoinRoom" className="grptext">{group.name}</Link>
+                   </div>                 
+                    <div classNmae="btn-dlt">
+                    <Link onClick={() => deleteGroup(group)}><img src={deleteButton} className='dlt-btn' alt="Close" /></Link>
+                    </div>               
+                  </td>
+                ))}
+              </table>
+          </div>
+
           </div>
 
           <div>
@@ -53,7 +91,8 @@ export default function Studygroups() {
             <img className='sg-imageContent' src={KOOPS} alt="Koops" />
           </div>
 
-          <div>
+
+          {/* <div>
             <h1>Study Group Page</h1>
             {groups.length > 0 ? (
               <div>
@@ -74,8 +113,12 @@ export default function Studygroups() {
             ) : (
               <p>No study groups available.</p>
             )}
-          </div>
+          </div> */}
+
+     
         </div>
+
+
 
         <div>
           <Footer />
