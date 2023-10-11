@@ -61,6 +61,7 @@ function App() {
         <Route path="/Homepage" Component={Homepage}/>
         <Route path="/Editprofile" Component={Editprofile}/>
         <Route path="/Accountdelete" Component={Accountdelete}/>
+
         <Route path="/DeleteAccount" Component={DeleteAccount}/>   
         <Route path="/Confirmdelete" Component={Confirmdelete}/> 
         <Route path="/SuccessfullyDeletedAccount" Component={SuccessfullyDeletedAccount}/> 
@@ -102,6 +103,7 @@ function App() {
         <Route path="/StudentDetailsUpdatedAdmin" Component={StudentDetailsUpdatedAdmin}/>  
         <Route path="/StudentDetailsUpBox" Component={StudentDetailsUpBox}/>  
         <Route path="/StudentRemoved" Component={StudentRemoved}/> */}
+
 
       </Routes>
       </BrowserRouter>
